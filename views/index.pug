@@ -3,3 +3,8 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+
+   br
+  - var btnType = 'primary'
+  - var btnSize = 'xl'
+  button(type='button' class='btn btn-' + btnType + ' btn-' + btnSize) touch me
